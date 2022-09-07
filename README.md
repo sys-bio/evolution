@@ -6,7 +6,7 @@
 # Installation
 Clone or fork this repo. To clone: 
 
-```git clone https://github.com/really-lilly/evolution.git```
+```git clone https://github.com/sys-bio/evolution.git```
 
 # Build sundials 
 Navigate to the evolution directory (```cd evolution```)
