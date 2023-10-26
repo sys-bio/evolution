@@ -1,6 +1,6 @@
 # Evolve Oscillating Models
 
-### Note: I wrote and tested everything in Linux (Ubuntu) and I'm not sure if it works on other platforms
+### Note: I wrote and tested everything in Linux (Ubuntu). Tested on MS Windows 10 and 11. Not tested on other platforms.
 
 
 # Installation
