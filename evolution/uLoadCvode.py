@@ -18,7 +18,6 @@ PROJ_ROOT = parent_dir.parent.absolute()
 
 #SUNDIALS_SRC = join(PROJ_ROOT, "sundials")  # sundials source directory
 SUNDIALS_INSTALL_PREFIX = join(PROJ_ROOT, f"sundials-install-{platform}")
-#print(f"Sundials install prefix: {SUNDIALS_INSTALL_PREFIX}")
 
 
 # print(f"INstall prefix: {SUNDIALS_INSTALL_PREFIX}")
@@ -40,11 +39,12 @@ PLATFORM_SHARED_LIBRARY_PREFIX = None
 if platform == "win32":
     PLATFORM_SHARED_LIBRARY_EXTENSION = "dll"
     PLATFORM_SHARED_LIBRARY_PREFIX = ""
+    SUNDIALS_LIB_DIR = join(SUNDIALS_INSTALL_PREFIX, "lib")
 elif platform == "linux":
     PLATFORM_SHARED_LIBRARY_EXTENSION = "so"
     distribution = id()
-    if distribution in ["centos", "rocky"]:
-        PLATFORM_SHARED_LIBRARY_PREFIX = "lib"
+    if distribution == "centos":
+        PLATFORM_SHARED_LIBRARY_PREFIX = "lib64"
         SUNDIALS_LIB_DIR = join(SUNDIALS_INSTALL_PREFIX, "lib64")
     else:
         PLATFORM_SHARED_LIBRARY_PREFIX = "lib"
