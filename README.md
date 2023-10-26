@@ -9,7 +9,7 @@ Tested on MS Windows 10 and 11. Not tested on other platforms.
 
 ```git clone https://github.com/sys-bio/evolution.git```
 
-- Or download and extract a zip file of this repo on your local machine.
+- Or download and extract zip file of this repo on to your local machine.
 
 If you do not want to build Sundials, but would rather use the Sundials binaries provided here, then go to **Setting up environment**.
 
