@@ -41,7 +41,7 @@ cd ../..
 ```
 
 # Setting up environment
-To set up a conda evironment with all the dependencies
+To set up a **conda evironment** with all the dependencies
 ```conda env create -f environment.yml```
 (This works in linux, but not sure if it will elsewhere...)
 
