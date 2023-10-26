@@ -8,6 +8,8 @@ Clone or fork this repo. To clone:
 
 ```git clone https://github.com/sys-bio/evolution.git```
 
+If you do not want to build Sundials, but would rather use the Sundials binaries provided here, then go to **Setting up environment**.
+
 # Build sundials 
 Navigate to the evolution directory (```cd evolution```)
 
@@ -40,6 +42,11 @@ To set up a conda evironment with all the dependencies
 ```conda env create -f environment.yml```
 (This works in linux, but not sure if it will elsewhere...)
 
+**Use pip instead:** If you do not want to use anaconda but would rather use pip, then just install the following python packages:
+1. ```pip install numba``` Note: as of 10/2023, the numba package only works with python versions < 3.12.0 
+2. ```pip install distro```
+3. ```pip install tellurium```
+ 
 # Quick start
 To run a batch of evolution with the default parameters:
 (first make sure you're in the sub directory evolution, (eg. /home/yourname/evolution/evolution)
